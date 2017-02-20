@@ -171,7 +171,7 @@ return [
     |
     */
 
-    'aliases' => [
+    'aliases' => array(
 
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
@@ -192,8 +192,8 @@ return [
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
-        'Password' => Illuminate\Support\Facades\Password::class,
-        'Queue' => Illuminate\Support\Facades\Queue::class,
+        'Queue' => Illuminate\Support\Facades\Queue::class ,
+        'Password' => Illuminate\Support\Facades\Password::class ,
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
         'Redis' => Illuminate\Support\Facades\Redis::class,
         'Request' => Illuminate\Support\Facades\Request::class,
@@ -206,7 +206,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-
-    ],
+    ) ,
 
 ];

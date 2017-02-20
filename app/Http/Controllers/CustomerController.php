@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Customer;
 
+
 class CustomerController extends Controller
 {
     public function index()
@@ -67,6 +68,15 @@ class CustomerController extends Controller
         return redirect('customers');
     }
 
+    public function stringify2($id)
+    {
+        $customer = Customer::where('cust_number', $id)->select('cust_number','name','address','city','state','zip','home_phone','cell_phone')->first();
+
+        $customer = $customer->toArray();
+        return response()->json($customer);
+    }
+
+
     public function stringify($id)
     {
         // $customers=Customer::where('id', $id)->select('customer_id','name','address','city','state','zip','home_phone','cell_phone')->first();
@@ -76,4 +86,7 @@ class CustomerController extends Controller
         return response()->json($customer);
     }
 
+    public function loadThisGuy() {
+        return view();
+    }
 }

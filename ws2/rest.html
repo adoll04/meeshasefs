@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+    <title> SOAP Web Service Demo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>    
+	<link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <a href="soap.html"id="logo">
+        <h1>Web Service Demonstration</h1>
+        <h1>REST Web Service</h1>
+      </a>
+
+    </header>
+
+
+
+       <div id="wrapper">
+      <section>
+
+          <H3> The link to the REST web service for AAPL is here: <a
+                  href="http://www.google.com/finance/info?q=NSE:AAPL"><font face="Arial, Helvetica, sans-serif">http://www.google.com/finance/info?q=NSE:AAPL</font></a>
+          </H3>
+
+          <h2>&nbsp;</h2>
+          <h2> Please enter a stock symbol. (the results are 20 minute delayed quote). </h2>
+          <h2>&nbsp;</h2>
+          <h3>Stock Symbol: <br>
+              <form action="squote2_rest.php" method="POST">
+                  <input type="text" name="stquote">
+                  <br>
+                  <br>
+                  <input type="submit" value="Click here to get quote">
+              </form>
+          </h3>
+
+
+      </section>
+
+
+    </div>  
+  </body>
+
+</html>
+
+
+
+
+
+
